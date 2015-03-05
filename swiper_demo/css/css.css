@@ -1,0 +1,430 @@
+/*
+ * Swiper - Mobile Touch Slider CSS
+ * http://www.idangero.us/sliders/swiper
+ *
+ * Vladimir Kharlampidi, The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Copyright 2012-2013, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us
+ *
+ * Licensed under GPL & MIT
+ *
+*/
+
+/* ===============================================================
+Basic Swiper Styles 
+================================================================*/
+.swiper-container {
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    backface-visibility:hidden;
+    /* Fix of Webkit flickering */
+    z-index:1;
+}
+.swiper-wrapper {
+    position:relative;
+    width:100%;
+    -webkit-transition-property:-webkit-transform, left, top;
+    -webkit-transition-duration:0s;
+    -webkit-transform:translate3d(0px,0,0);
+    -webkit-transition-timing-function:ease;
+    
+    -moz-transition-property:-moz-transform, left, top;
+    -moz-transition-duration:0s;
+    -moz-transform:translate3d(0px,0,0);
+    -moz-transition-timing-function:ease;
+    
+    -o-transition-property:-o-transform, left, top;
+    -o-transition-duration:0s;
+    -o-transform:translate3d(0px,0,0);
+    -o-transition-timing-function:ease;
+    -o-transform:translate(0px,0px);
+    
+    -ms-transition-property:-ms-transform, left, top;
+    -ms-transition-duration:0s;
+    -ms-transform:translate3d(0px,0,0);
+    -ms-transition-timing-function:ease;
+    
+    transition-property:transform, left, top;
+    transition-duration:0s;
+    transform:translate3d(0px,0,0);
+    transition-timing-function:ease;
+
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.swiper-free-mode > .swiper-wrapper {
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    margin: 0 auto;
+}
+.swiper-slide {
+    float: left;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+    -ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+    -ms-touch-action: pan-x;
+}
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+    /* Specify Swiper's Size: */
+
+    /*width:200px;
+    height: 100px;*/
+    width: 100%;
+    height: 100%;
+
+}
+.swiper-slide {
+    /* Specify Slides's Size: */
+    
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide-active {
+    /* Specific active slide styling: */
+    
+}
+.swiper-slide-visible {
+    /* Specific visible slide styling: */   
+
+}
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.swiper-pagination-switch {
+    /* Stylize pagination button: */    
+
+}
+.swiper-active-switch {
+    /* Specific active button style: */ 
+    
+}
+.swiper-visible-switch {
+    /* Specific visible button style: */    
+    
+}
+
+/*
+reset style
+*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 helvetica, tahoma, arial, sans-serif;
+}
+
+@media screen and(-webkit-min-device-pixel-ratio: 0) {
+    html body, button, input, select, textarea {
+        font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif;
+    }
+}
+
+@-moz-document url-prefix() {
+    html body, button, input, select, textarea {
+        font-family: 'Helvetica Neue', Helvetica, Tahoma, Arial, sans-serif;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+code, kbd, pre, samp {
+    font-family: courier new, courier, monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    color: white;
+    font-family:  'Microsoft YaHei',sans-serif;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+}
+/*
+reset style end
+*/
+.container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.container .scroller{
+    position: absolute;
+}
+.container section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.page1 {
+    background: transparent url(http://assets.dxycdn.com/app/drugs2/img/aspirin/1.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    text-align: center;
+
+}
+.page2 {
+    background: transparent url(http://assets.dxycdn.com/app/drugs2/img/aspirin/2.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page3 {
+    background: transparent url(http://assets.dxycdn.com/app/drugs2/img/aspirin/3.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page4 {
+    background: transparent url(http://assets.dxycdn.com/app/drugs2/img/aspirin/4.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page5 {
+    background: transparent url(http://assets.dxycdn.com/app/drugs2/img/aspirin/5.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page6 {
+    background: transparent url(http://assets.dxycdn.com/app/drugs2/img/aspirin/6.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.page7 {
+    background: transparent url(http://assets.dxycdn.com/app/drugs2/img/aspirin/7.jpg) no-repeat center center;
+    background-size: 100% 100%;
+}
+.download{
+
+}
+.page1 h2{
+    font-size: 2.6rem;
+    font-weight: normal;
+    line-height: 50px;
+    color: #ffffff;
+    margin-top:6%;
+}
+.page1 p{
+    font-size: 1.6rem;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: '宋体',sans-serif;
+    margin:2% auto;
+}
+.page1 .download{
+    display: block;
+    width:50%;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 23px;
+    line-height: 50px;
+    margin: 10px auto 0 auto;
+    color: #ffffff;
+    background: transparent;
+
+}
+
+.page1 .phone {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.page2 p{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.page2 p:first-child{
+    font-size: 1.6rem;
+    font-family: '宋体',sans-serif;
+    margin-top:16%;
+}
+.page2 p:first-child span{
+    font-size: 2.6rem;
+}
+.page2 p:last-child{
+    font-size: 1.7rem;
+}
+.page3 p{
+    font-size: 1.6rem;
+}
+.page3 p:first-child{
+    font-size: 2.6rem;
+    font-family: '宋体',sans-serif;
+    margin-top:16%;
+}
+.page4 p{
+    font-size: 1.6rem;
+}
+.page4 p:first-child{
+    font-size: 2.6rem;
+    font-family: '宋体',sans-serif;
+    margin-top:16%;
+}
+.page5 p{
+    font-size: 1.6rem;
+}
+.page5 p:first-child{
+    font-size: 2.6rem;
+    margin-top:16%;
+}
+.page6 p{
+    font-size: 1.6rem;
+}
+.page6 p:first-child{
+    font-size: 2.6rem;
+    margin-top:16%;
+}
+
+.page7 .box{
+    margin-top:36%;
+    text-align: left;
+    vertical-align: top;
+}
+.page7 .box img{
+    border: 3px solid rgba(202, 250, 199, 0.78);
+    margin-left: 5%;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+}
+.page7 .box p{
+    display: inline-block;
+    vertical-align: top;
+    margin-left:2%;
+}
+.page7 .box p span:first-child{
+    font-size: 1.8rem;
+}
+.page7 .box p span:last-child{
+    font-size: 1.4rem;
+    font-family: '宋体',sans-serif;
+}
+.page7 .d-wrapper{
+    text-align: right;
+}
+.page7 .download{
+    position: absolute;
+    text-align: center;
+    display: block;
+    width:80px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    line-height: 30px;
+    right:5%;
+    top: 34%;
+    color: #ffffff;
+    background: transparent;
+}
+
+.scroll-arr{
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+    bottom: 5%;
+    width: 28px;
+    height: 15px;
+    -webkit-animation: arr-ani 1.2s ease-out infinite;
+    animation: arr-ani 1.2s ease-out infinite;
+}
+@-webkit-keyframes arr-ani {
+    0% {-webkit-transform:translateY(10px); opacity: 0.5;}
+    100% { -webkit-transform:translateY(-10px); opacity: 0;}
+}
+@keyframes arr-ani {
+0% {-webkit-transform:translateY(10px); opacity: 0.5;}
+100% { -webkit-transform:translateY(-10px); opacity: 0;}
+}
+.arr-g{
+    background: url("http://assets.dxycdn.com/app/drugs2/img/aspirin/scrolldowng.png") no-repeat;
+    background-size: 100% 100%;
+}
+.arr-w{
+    background: url("http://assets.dxycdn.com/app/drugs2/img/aspirin/scrolldownw.png") no-repeat;
+    background-size: 100% 100%;
+}
+.download-icon{
+    position: absolute;
+    display: block;
+    background: url("http://assets.dxycdn.com/app/drugs2/img/aspirin/download.png") no-repeat;
+    background-size: 100% 100%;
+    width: 20px;
+    height: 19px;
+    right: 5%;
+    top: 3%;
+    border: none;
+    text-indent: -9999px;
+}

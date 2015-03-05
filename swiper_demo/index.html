@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no"/>
+    <title>手机卡片上下滑动</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+<div id="container" class="container swiper-container">
+    <div id="scroller" class="scroller swiper-wrapper">
+        <section id="page1" class="page1 swiper-slide">
+            <h2>page1</h2>
+
+            <p>page1</p>
+
+            <div class="scrolldown"></div>
+            <span class="scroll-arr arr-g"></span>
+        </section>
+        <section id="page2" class="page2 swiper-slide">
+            <p>page2</p>
+            <p>page2</p>
+            <span class="scroll-arr arr-w"></span>
+
+        </section>
+        <section id="page3" class="page3 swiper-slide">
+            <p>page3</p>
+            <p>page3</p>
+            <span class="scroll-arr arr-w"></span>
+
+        </section>
+        <section id="page4" class="page4 swiper-slide">
+            <p>page4</p>
+            <p>page4</p>
+            <span class="scroll-arr arr-w"></span>
+
+         </section>
+        <section id="page5" class="page5 swiper-slide">
+            <p>page5</p>
+            <p>page5</p>
+            <span class="scroll-arr arr-w"></span>
+
+        </section>
+        <section id="page6" class="page6 swiper-slide">
+            <p>page6</p>
+            <p>page6</p>
+            <span class="scroll-arr arr-w"></span>
+        </section>
+        <section id="page7" class="page7 swiper-slide">
+            <div class="box">
+                <p><span>page7</span></p>
+            </div>
+        </section>
+    </div>
+</div>
+<script type="text/javascript" src="../third-party/zepto.min.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.js"></script>
+<script type="text/javascript">
+    $(function(){
+        mySwiper = $('.swiper-container').swiper({
+            mode:'vertical',
+            loop: false,
+            onFirstInit: function(swiper){
+            },
+            onSlideChangeStart: function(swiper){
+            },
+            onSlideChangeEnd: function(swiper){
+            }
+        });
+    });
+</script>
+</body>
+</html>
